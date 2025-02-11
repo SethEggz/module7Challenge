@@ -3,7 +3,7 @@ import inquirer from "inquirer";
 import fs from "fs";
 import generateMarkdown from'./utils/generateMarkdown';
 //questions
-const questions = ['What is the title?','What would you lik to add as a desription?','What is your GitHub username(Please provide link)?', 'What is your Email address?','What license would you like to use?'];
+const questions = ['What is the title?','What would you like to add as a desription?','Istallation instructions?','Useage?','How to Contribute?','What tests should be run?','What is your GitHub username?', 'What is your Email address?','What license would you like to use?'];
 
 //function to write README file
 function writeToFile(fileName, data) {
@@ -28,20 +28,35 @@ function init() {
 
       },
       {
+        type:'input',
+        name:'Installation',
+        message:questions[2],
+      },
+      {
+        type:'input',
+        name:'contributing',
+        message:questions[3],
+      },
+      {
+        type:'input',
+        name:'Tests',
+        message:questions[4],
+      },
+      {
         type: 'input',
-        name: 'GitHub',
-        message: questions[2],
+        name: 'GitHubUsername',
+        message: questions[5],
       },
       {
         type: 'input',
         name: 'Email',
-        message: questions[3],
+        message: questions[6],
       },
       {
         type: 'input',
         name: 'License',
-        message: questions[4],
-        choices: ['Apache', 'Boost', 'GNU GPL', 'MIT', 'Unlicense'],
+        message: questions[7],
+        choices: ['Apache', 'Boost', 'GNU GPL', 'MIT'],
       },
     ])
     .then((data) => {
