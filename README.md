@@ -13,7 +13,7 @@
 
 - Seth Eggenburg
 - edX Boot Camps LLC. All Rights Reserved.
-- PYTHON (MONTY) PICTURES LTD in association with MICHAEL WHITE
+- https://github.com/ckisi
 ## License
 MIT License
 
