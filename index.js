@@ -1,13 +1,54 @@
-// TODO: Include packages needed for this application
+// packages 
+import inquirer from "inquirer";
+import fs from "fs";
+import generateMarkdown from'./utils/generateMarkdown';
+//questions
+const questions = ['What is the title?','What would you lik to add as a desription?','What is your GitHub username(Please provide link)?', 'What is your Email address?','What license would you like to use?'];
 
-// TODO: Create an array of questions for user input
-const questions = [];
+//function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, generateMarkdown(data), (err) => 
+        err ? console.log(err) : console.log('Created')
+      );
+}
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function to initialize app
+function init() {
+    inquirer
+    .prompt([
+      {
+        type: 'input',
+        name: 'Title',
+        message: questions[0],
+      },
+      {
+        type: 'input',
+        name: 'Description',
+        message:questions[1]
 
-// TODO: Create a function to initialize app
-function init() {}
+      },
+      {
+        type: 'input',
+        name: 'GitHub',
+        message: questions[2],
+      },
+      {
+        type: 'input',
+        name: 'Email',
+        message: questions[3],
+      },
+      {
+        type: 'input',
+        name: 'License',
+        message: questions[4],
+        choices: ['Apache', 'Boost', 'GNU GPL', 'MIT', 'Unlicense'],
+      },
+    ])
+    .then((data) => {
+      const fileName = 'README.md';
+      writeToFile(fileName, data);
+    });
+}
 
-// Function call to initialize app
+// calls initialize app
 init();
