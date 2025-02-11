@@ -60,7 +60,7 @@ function init() {
       },
     ])
     .then((data) => {
-      const fileName = 'README.md';
+      const fileName = 'genratedREADME.md';
       writeToFile(fileName, data);
     });
 }
