@@ -47,11 +47,11 @@ function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseSection = renderLicenseSection(data.license);
 
-  return `# ${data.title}
+  return `# ${data.Title}
  
 
 ## Description
-${data.description}
+${data.Description}
 
 ## Table of Contents
 - [Installation](#installation)
@@ -62,21 +62,21 @@ ${data.description}
 - [License](#license)
 
 ## Installation
-${data.installationInstructions}
+${data.Installation}
 
 ## Usage
-${data.usageInformation}
+${data.usage}
 
 ## Contribution
-${data.contributionGuidelines}
+${data.contributing}
 
 ## Testing
-${data.testingInstructions}
+${data.Tests}
 
 ## Questions
-- GitHub username: ${data.username}
-- GitHub link: https://github.com/${data.username}
-- For additional questions, email me at ${data.email}
+- GitHub username: ${data.GitHubUsername}
+- GitHub link: https://github.com/${data.GitHubUsername}
+- For additional questions, email me at ${data.Email}
 
 ## Badges
  ${licenseBadge}
@@ -86,6 +86,6 @@ ${licenseSection}`;
 
 };
 
-renderLicenseBadge(license);
-renderLicenseLink(license);
+renderLicenseBadge();
+renderLicenseLink();
 export default generateMarkdown;

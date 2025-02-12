@@ -1,7 +1,7 @@
 // packages 
 import inquirer from "inquirer";
 import fs from "fs";
-import generateMarkdown from'./utils/generateMarkdown';
+import generateMarkdown from'./utils/generateMarkdown.js';
 //questions
 const questions = ['What is the title?','What would you like to add as a desription?','Istallation instructions?','Useage?','How to Contribute?','What tests should be run?','What is your GitHub username?', 'What is your Email address?','What license would you like to use?'];
 
@@ -39,23 +39,28 @@ function init() {
       },
       {
         type:'input',
+        name: 'usage',
+        message: questions[4]
+      },
+      {
+        type:'input',
         name:'Tests',
-        message:questions[4],
+        message:questions[5],
       },
       {
         type: 'input',
         name: 'GitHubUsername',
-        message: questions[5],
-      },
-      {
-        type: 'input',
-        name: 'Email',
         message: questions[6],
       },
       {
         type: 'input',
-        name: 'License',
+        name: 'Email',
         message: questions[7],
+      },
+      {
+        type: 'list',
+        name: 'license',
+        message: questions[8],
         choices: ['Apache', 'Boost', 'GNU GPL', 'MIT'],
       },
     ])
