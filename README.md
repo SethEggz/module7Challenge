@@ -1,2 +1,40 @@
 # module7Challenge
-for module challenge
+
+## for module challenge
+- Motivation? wanting to get better with node.js
+- why this build? to  get better at using iquirer package.
+- what did I learn? 
+
+## Installation
+
+## Usage
+
+https://drive.google.com/file/d/1aNw_FeV3KM75x5iPzS2To7jIR1Oh-9UZ/view
+
+## Credits
+
+- Seth Eggenburg
+- edX Boot Camps LLC. All Rights Reserved.
+- https://github.com/ckisi
+## License
+MIT License
+
+Copyright (c) [2025] [Seth Eggneburg]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
